@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E2CD1471C3CED5500EEA3B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CD1461C3CED5500EEA3B2 /* AppDelegate.m */; };
+		7E2CD14A1C3CED5500EEA3B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CD1491C3CED5500EEA3B2 /* main.m */; };
+		7E2CD14D1C3CED5500EEA3B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CD14C1C3CED5500EEA3B2 /* ViewController.m */; };
+		7E2CD14F1C3CED5500EEA3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2CD14E1C3CED5500EEA3B2 /* Assets.xcassets */; };
+		7E2CD1521C3CED5500EEA3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E2CD1501C3CED5500EEA3B2 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E2CD1421C3CED5500EEA3B2 /* Shika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shika.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2CD1451C3CED5500EEA3B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7E2CD1461C3CED5500EEA3B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7E2CD1491C3CED5500EEA3B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E2CD14B1C3CED5500EEA3B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7E2CD14C1C3CED5500EEA3B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7E2CD14E1C3CED5500EEA3B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E2CD1511C3CED5500EEA3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E2CD1531C3CED5500EEA3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E2CD13F1C3CED5500EEA3B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E2CD1391C3CED5400EEA3B2 = {
+			isa = PBXGroup;
+			children = (
+				7E2CD1441C3CED5500EEA3B2 /* Shika */,
+				7E2CD1431C3CED5500EEA3B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E2CD1431C3CED5500EEA3B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E2CD1421C3CED5500EEA3B2 /* Shika.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E2CD1441C3CED5500EEA3B2 /* Shika */ = {
+			isa = PBXGroup;
+			children = (
+				7E2CD1451C3CED5500EEA3B2 /* AppDelegate.h */,
+				7E2CD1461C3CED5500EEA3B2 /* AppDelegate.m */,
+				7E2CD14B1C3CED5500EEA3B2 /* ViewController.h */,
+				7E2CD14C1C3CED5500EEA3B2 /* ViewController.m */,
+				7E2CD14E1C3CED5500EEA3B2 /* Assets.xcassets */,
+				7E2CD1501C3CED5500EEA3B2 /* Main.storyboard */,
+				7E2CD1531C3CED5500EEA3B2 /* Info.plist */,
+				7E2CD1481C3CED5500EEA3B2 /* Supporting Files */,
+			);
+			path = Shika;
+			sourceTree = "<group>";
+		};
+		7E2CD1481C3CED5500EEA3B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E2CD1491C3CED5500EEA3B2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E2CD1411C3CED5500EEA3B2 /* Shika */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E2CD1561C3CED5500EEA3B2 /* Build configuration list for PBXNativeTarget "Shika" */;
+			buildPhases = (
+				7E2CD13E1C3CED5500EEA3B2 /* Sources */,
+				7E2CD13F1C3CED5500EEA3B2 /* Frameworks */,
+				7E2CD1401C3CED5500EEA3B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shika;
+			productName = Shika;
+			productReference = 7E2CD1421C3CED5500EEA3B2 /* Shika.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E2CD13A1C3CED5400EEA3B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Yubi;
+				TargetAttributes = {
+					7E2CD1411C3CED5500EEA3B2 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 7E2CD13D1C3CED5400EEA3B2 /* Build configuration list for PBXProject "Shika" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E2CD1391C3CED5400EEA3B2;
+			productRefGroup = 7E2CD1431C3CED5500EEA3B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E2CD1411C3CED5500EEA3B2 /* Shika */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E2CD1401C3CED5500EEA3B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2CD14F1C3CED5500EEA3B2 /* Assets.xcassets in Resources */,
+				7E2CD1521C3CED5500EEA3B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E2CD13E1C3CED5500EEA3B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2CD14D1C3CED5500EEA3B2 /* ViewController.m in Sources */,
+				7E2CD14A1C3CED5500EEA3B2 /* main.m in Sources */,
+				7E2CD1471C3CED5500EEA3B2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E2CD1501C3CED5500EEA3B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E2CD1511C3CED5500EEA3B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E2CD1541C3CED5500EEA3B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7E2CD1551C3CED5500EEA3B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7E2CD1571C3CED5500EEA3B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Shika/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.yubi.Shika;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7E2CD1581C3CED5500EEA3B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Shika/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.yubi.Shika;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E2CD13D1C3CED5400EEA3B2 /* Build configuration list for PBXProject "Shika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2CD1541C3CED5500EEA3B2 /* Debug */,
+				7E2CD1551C3CED5500EEA3B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E2CD1561C3CED5500EEA3B2 /* Build configuration list for PBXNativeTarget "Shika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2CD1571C3CED5500EEA3B2 /* Debug */,
+				7E2CD1581C3CED5500EEA3B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E2CD13A1C3CED5400EEA3B2 /* Project object */;
+}
