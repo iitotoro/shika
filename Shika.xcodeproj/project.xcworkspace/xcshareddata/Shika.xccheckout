@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>074907BC-44AF-43F1-A4FA-D0B319F44046</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>f7d8f97f-4b4e-0410-be5b-f55f1808d820++505</key>
+		<string>http://tutorial-haartraining.googlecode.com/svn/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>f7d8f97f-4b4e-0410-be5b-f55f1808d820++505</key>
+		<string>tutorial-haartraining-read-only/</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>f7d8f97f-4b4e-0410-be5b-f55f1808d820++505</key>
+		<string>http://tutorial-haartraining.googlecode.com/svn</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://tutorial-haartraining.googlecode.com/svn/trunk</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>f7d8f97f-4b4e-0410-be5b-f55f1808d820++505</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>f7d8f97f-4b4e-0410-be5b-f55f1808d820++505</string>
+			<key>IDESourceControlWCCName</key>
+			<string>tutorial-haartraining-read-only</string>
+		</dict>
+	</array>
+</dict>
+</plist>

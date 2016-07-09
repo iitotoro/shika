@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E54F19C1A257CA40053BEB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E54F19B1A257CA40053BEB2 /* AppDelegate.m */; };
+		7E54F19E1A257CA40053BEB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E54F19D1A257CA40053BEB2 /* main.m */; };
+		7E54F1A11A257CA40053BEB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E54F1A01A257CA40053BEB2 /* ViewController.m */; };
+		7E54F1A41A257CA40053BEB2 /* Shika.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E54F1A21A257CA40053BEB2 /* Shika.xcdatamodeld */; };
+		7E54F1A61A257CA40053BEB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E54F1A51A257CA40053BEB2 /* Images.xcassets */; };
+		7E54F1A91A257CA40053BEB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E54F1A71A257CA40053BEB2 /* Main.storyboard */; };
+		7E54F1B51A257CA40053BEB2 /* ShikaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E54F1B41A257CA40053BEB2 /* ShikaTests.m */; };
+		7E54F1C01A257FBA0053BEB2 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E54F1BF1A257FBA0053BEB2 /* Quartz.framework */; };
+		7E54F1CB1A2589C50053BEB2 /* TB_annotate.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7E54F1C21A2589C50053BEB2 /* TB_annotate.tiff */; };
+		7E54F1CC1A2589C50053BEB2 /* TB_crop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7E54F1C31A2589C50053BEB2 /* TB_crop.tiff */; };
+		7E54F1CD1A2589C50053BEB2 /* TB_hand.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7E54F1C41A2589C50053BEB2 /* TB_hand.tiff */; };
+		7E54F1CE1A2589C50053BEB2 /* TB_rotate.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7E54F1C51A2589C50053BEB2 /* TB_rotate.tiff */; };
+		7E54F1CF1A2589C50053BEB2 /* TB_select.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7E54F1C61A2589C50053BEB2 /* TB_select.tiff */; };
+		7E54F1D01A2589C50053BEB2 /* TB_zoomActual.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E54F1C71A2589C50053BEB2 /* TB_zoomActual.png */; };
+		7E54F1D11A2589C50053BEB2 /* TB_zoomIn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E54F1C81A2589C50053BEB2 /* TB_zoomIn.png */; };
+		7E54F1D21A2589C50053BEB2 /* TB_zoomOut.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E54F1C91A2589C50053BEB2 /* TB_zoomOut.png */; };
+		7E54F1D31A2589C50053BEB2 /* TB_zoomToFit.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E54F1CA1A2589C50053BEB2 /* TB_zoomToFit.png */; };
+		7E54F1D61A2591C60053BEB2 /* PreprocessedSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E54F1D51A2591C60053BEB2 /* PreprocessedSample.m */; };
+		7E54F1D91A25A9930053BEB2 /* ShikaProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E54F1D81A25A9930053BEB2 /* ShikaProject.m */; };
+		7ECE6CA01A68DD98003B5F18 /* cvhaartraining.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE6C9F1A68DD98003B5F18 /* cvhaartraining.cpp */; };
+		7ECE6CA51A68ED68003B5F18 /* cvboost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE6CA41A68ED68003B5F18 /* cvboost.cpp */; };
+		7ECE6CA71A68EEAD003B5F18 /* cvcommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE6CA61A68EEAD003B5F18 /* cvcommon.cpp */; };
+		7ECE6CA91A68EEFB003B5F18 /* cvhaarclassifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE6CA81A68EEFB003B5F18 /* cvhaarclassifier.cpp */; };
+		7ED0F20B1A4129DB005EAB9F /* cvsamples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7ED0F20A1A4129DB005EAB9F /* cvsamples.cpp */; };
+		7ED0F20F1A4163BC005EAB9F /* ClassifierTrainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED0F20E1A4163BC005EAB9F /* ClassifierTrainer.m */; };
+		7ED6D6611A3ECE8800748D89 /* TrainingSampleMaker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6D6601A3ECE8800748D89 /* TrainingSampleMaker.mm */; };
+		7ED6D68D1A400DE300748D89 /* libopencv_calib3d.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D67A1A400DE300748D89 /* libopencv_calib3d.2.4.5.dylib */; };
+		7ED6D68E1A400DE300748D89 /* libopencv_contrib.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D67B1A400DE300748D89 /* libopencv_contrib.2.4.5.dylib */; };
+		7ED6D68F1A400DE300748D89 /* libopencv_core.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D67C1A400DE300748D89 /* libopencv_core.2.4.5.dylib */; };
+		7ED6D6901A400DE300748D89 /* libopencv_features2d.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D67D1A400DE300748D89 /* libopencv_features2d.2.4.5.dylib */; };
+		7ED6D6911A400DE300748D89 /* libopencv_flann.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D67E1A400DE300748D89 /* libopencv_flann.2.4.5.dylib */; };
+		7ED6D6921A400DE300748D89 /* libopencv_gpu.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D67F1A400DE300748D89 /* libopencv_gpu.2.4.5.dylib */; };
+		7ED6D6931A400DE300748D89 /* libopencv_highgui.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D6801A400DE300748D89 /* libopencv_highgui.2.4.5.dylib */; };
+		7ED6D6941A400DE300748D89 /* libopencv_imgproc.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D6811A400DE300748D89 /* libopencv_imgproc.2.4.5.dylib */; };
+		7ED6D6951A400DE300748D89 /* libopencv_legacy.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D6821A400DE300748D89 /* libopencv_legacy.2.4.5.dylib */; };
+		7ED6D6961A400DE300748D89 /* libopencv_ml.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D6831A400DE300748D89 /* libopencv_ml.2.4.5.dylib */; };
+		7ED6D6971A400DE300748D89 /* libopencv_nonfree.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D6841A400DE300748D89 /* libopencv_nonfree.2.4.5.dylib */; };
+		7ED6D6981A400DE300748D89 /* libopencv_objdetect.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D6851A400DE300748D89 /* libopencv_objdetect.2.4.5.dylib */; };
+		7ED6D6991A400DE300748D89 /* libopencv_ocl.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D6861A400DE300748D89 /* libopencv_ocl.2.4.5.dylib */; };
+		7ED6D69A1A400DE300748D89 /* libopencv_photo.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D6871A400DE300748D89 /* libopencv_photo.2.4.5.dylib */; };
+		7ED6D69B1A400DE300748D89 /* libopencv_stitching.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D6881A400DE300748D89 /* libopencv_stitching.2.4.5.dylib */; };
+		7ED6D69C1A400DE300748D89 /* libopencv_superres.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D6891A400DE300748D89 /* libopencv_superres.2.4.5.dylib */; };
+		7ED6D69D1A400DE300748D89 /* libopencv_ts.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D68A1A400DE300748D89 /* libopencv_ts.2.4.5.dylib */; };
+		7ED6D69E1A400DE300748D89 /* libopencv_video.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D68B1A400DE300748D89 /* libopencv_video.2.4.5.dylib */; };
+		7ED6D69F1A400DE300748D89 /* libopencv_videostab.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED6D68C1A400DE300748D89 /* libopencv_videostab.2.4.5.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E54F1AF1A257CA40053BEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E54F18D1A257CA40053BEB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E54F1941A257CA40053BEB2;
+			remoteInfo = Shika;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E54F1951A257CA40053BEB2 /* Shika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shika.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E54F1991A257CA40053BEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E54F19A1A257CA40053BEB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7E54F19B1A257CA40053BEB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7E54F19D1A257CA40053BEB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E54F19F1A257CA40053BEB2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7E54F1A01A257CA40053BEB2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7E54F1A31A257CA40053BEB2 /* Shika.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shika.xcdatamodel; sourceTree = "<group>"; };
+		7E54F1A51A257CA40053BEB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7E54F1A81A257CA40053BEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E54F1AE1A257CA40053BEB2 /* ShikaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShikaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E54F1B31A257CA40053BEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E54F1B41A257CA40053BEB2 /* ShikaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShikaTests.m; sourceTree = "<group>"; };
+		7E54F1BF1A257FBA0053BEB2 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		7E54F1C21A2589C50053BEB2 /* TB_annotate.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_annotate.tiff; sourceTree = "<group>"; };
+		7E54F1C31A2589C50053BEB2 /* TB_crop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_crop.tiff; sourceTree = "<group>"; };
+		7E54F1C41A2589C50053BEB2 /* TB_hand.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_hand.tiff; sourceTree = "<group>"; };
+		7E54F1C51A2589C50053BEB2 /* TB_rotate.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_rotate.tiff; sourceTree = "<group>"; };
+		7E54F1C61A2589C50053BEB2 /* TB_select.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_select.tiff; sourceTree = "<group>"; };
+		7E54F1C71A2589C50053BEB2 /* TB_zoomActual.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_zoomActual.png; sourceTree = "<group>"; };
+		7E54F1C81A2589C50053BEB2 /* TB_zoomIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_zoomIn.png; sourceTree = "<group>"; };
+		7E54F1C91A2589C50053BEB2 /* TB_zoomOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_zoomOut.png; sourceTree = "<group>"; };
+		7E54F1CA1A2589C50053BEB2 /* TB_zoomToFit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_zoomToFit.png; sourceTree = "<group>"; };
+		7E54F1D41A2591C60053BEB2 /* PreprocessedSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreprocessedSample.h; sourceTree = "<group>"; };
+		7E54F1D51A2591C60053BEB2 /* PreprocessedSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreprocessedSample.m; sourceTree = "<group>"; };
+		7E54F1D71A25A9930053BEB2 /* ShikaProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShikaProject.h; sourceTree = "<group>"; };
+		7E54F1D81A25A9930053BEB2 /* ShikaProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShikaProject.m; sourceTree = "<group>"; };
+		7ECE6C9E1A68D816003B5F18 /* cvhaartraining.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cvhaartraining.h; sourceTree = "<group>"; };
+		7ECE6C9F1A68DD98003B5F18 /* cvhaartraining.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cvhaartraining.cpp; sourceTree = "<group>"; };
+		7ECE6CA11A68DE36003B5F18 /* _cvhaartraining.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _cvhaartraining.h; sourceTree = "<group>"; };
+		7ECE6CA21A68DE6B003B5F18 /* _cvcommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _cvcommon.h; sourceTree = "<group>"; };
+		7ECE6CA31A68E046003B5F18 /* cvclassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cvclassifier.h; sourceTree = "<group>"; };
+		7ECE6CA41A68ED68003B5F18 /* cvboost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cvboost.cpp; sourceTree = "<group>"; };
+		7ECE6CA61A68EEAD003B5F18 /* cvcommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cvcommon.cpp; sourceTree = "<group>"; };
+		7ECE6CA81A68EEFB003B5F18 /* cvhaarclassifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cvhaarclassifier.cpp; sourceTree = "<group>"; };
+		7ED0F20A1A4129DB005EAB9F /* cvsamples.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cvsamples.cpp; sourceTree = "<group>"; };
+		7ED0F20C1A4151D2005EAB9F /* cvsamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cvsamples.h; sourceTree = "<group>"; };
+		7ED0F20D1A4163BC005EAB9F /* ClassifierTrainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifierTrainer.h; sourceTree = "<group>"; };
+		7ED0F20E1A4163BC005EAB9F /* ClassifierTrainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifierTrainer.m; sourceTree = "<group>"; };
+		7ED6D65F1A3ECE8800748D89 /* TrainingSampleMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingSampleMaker.h; sourceTree = "<group>"; };
+		7ED6D6601A3ECE8800748D89 /* TrainingSampleMaker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TrainingSampleMaker.mm; sourceTree = "<group>"; };
+		7ED6D67A1A400DE300748D89 /* libopencv_calib3d.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_calib3d.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_calib3d.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D67B1A400DE300748D89 /* libopencv_contrib.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_contrib.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_contrib.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D67C1A400DE300748D89 /* libopencv_core.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_core.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D67D1A400DE300748D89 /* libopencv_features2d.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_features2d.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_features2d.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D67E1A400DE300748D89 /* libopencv_flann.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_flann.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_flann.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D67F1A400DE300748D89 /* libopencv_gpu.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_gpu.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_gpu.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D6801A400DE300748D89 /* libopencv_highgui.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_highgui.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D6811A400DE300748D89 /* libopencv_imgproc.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_imgproc.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D6821A400DE300748D89 /* libopencv_legacy.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_legacy.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_legacy.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D6831A400DE300748D89 /* libopencv_ml.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ml.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_ml.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D6841A400DE300748D89 /* libopencv_nonfree.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_nonfree.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_nonfree.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D6851A400DE300748D89 /* libopencv_objdetect.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_objdetect.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D6861A400DE300748D89 /* libopencv_ocl.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ocl.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_ocl.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D6871A400DE300748D89 /* libopencv_photo.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_photo.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D6881A400DE300748D89 /* libopencv_stitching.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stitching.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_stitching.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D6891A400DE300748D89 /* libopencv_superres.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_superres.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_superres.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D68A1A400DE300748D89 /* libopencv_ts.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ts.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_ts.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D68B1A400DE300748D89 /* libopencv_video.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_video.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_video.2.4.5.dylib; sourceTree = "<group>"; };
+		7ED6D68C1A400DE300748D89 /* libopencv_videostab.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.2.4.5.dylib; path = ../../../../../usr/local/lib/libopencv_videostab.2.4.5.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E54F1921A257CA40053BEB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ED6D68D1A400DE300748D89 /* libopencv_calib3d.2.4.5.dylib in Frameworks */,
+				7ED6D68E1A400DE300748D89 /* libopencv_contrib.2.4.5.dylib in Frameworks */,
+				7ED6D68F1A400DE300748D89 /* libopencv_core.2.4.5.dylib in Frameworks */,
+				7ED6D6901A400DE300748D89 /* libopencv_features2d.2.4.5.dylib in Frameworks */,
+				7ED6D6911A400DE300748D89 /* libopencv_flann.2.4.5.dylib in Frameworks */,
+				7ED6D6921A400DE300748D89 /* libopencv_gpu.2.4.5.dylib in Frameworks */,
+				7ED6D6931A400DE300748D89 /* libopencv_highgui.2.4.5.dylib in Frameworks */,
+				7ED6D6941A400DE300748D89 /* libopencv_imgproc.2.4.5.dylib in Frameworks */,
+				7ED6D6951A400DE300748D89 /* libopencv_legacy.2.4.5.dylib in Frameworks */,
+				7ED6D6961A400DE300748D89 /* libopencv_ml.2.4.5.dylib in Frameworks */,
+				7ED6D6971A400DE300748D89 /* libopencv_nonfree.2.4.5.dylib in Frameworks */,
+				7ED6D6981A400DE300748D89 /* libopencv_objdetect.2.4.5.dylib in Frameworks */,
+				7ED6D6991A400DE300748D89 /* libopencv_ocl.2.4.5.dylib in Frameworks */,
+				7ED6D69A1A400DE300748D89 /* libopencv_photo.2.4.5.dylib in Frameworks */,
+				7ED6D69B1A400DE300748D89 /* libopencv_stitching.2.4.5.dylib in Frameworks */,
+				7ED6D69C1A400DE300748D89 /* libopencv_superres.2.4.5.dylib in Frameworks */,
+				7ED6D69D1A400DE300748D89 /* libopencv_ts.2.4.5.dylib in Frameworks */,
+				7ED6D69E1A400DE300748D89 /* libopencv_video.2.4.5.dylib in Frameworks */,
+				7ED6D69F1A400DE300748D89 /* libopencv_videostab.2.4.5.dylib in Frameworks */,
+				7E54F1C01A257FBA0053BEB2 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E54F1AB1A257CA40053BEB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E54F18C1A257CA40053BEB2 = {
+			isa = PBXGroup;
+			children = (
+				7E54F1C11A2589830053BEB2 /* Images */,
+				7E54F1BE1A257FA30053BEB2 /* Frameworks */,
+				7E54F1971A257CA40053BEB2 /* Shika */,
+				7E54F1B11A257CA40053BEB2 /* ShikaTests */,
+				7E54F1961A257CA40053BEB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E54F1961A257CA40053BEB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E54F1951A257CA40053BEB2 /* Shika.app */,
+				7E54F1AE1A257CA40053BEB2 /* ShikaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E54F1971A257CA40053BEB2 /* Shika */ = {
+			isa = PBXGroup;
+			children = (
+				7E54F1D41A2591C60053BEB2 /* PreprocessedSample.h */,
+				7E54F1D51A2591C60053BEB2 /* PreprocessedSample.m */,
+				7E54F19A1A257CA40053BEB2 /* AppDelegate.h */,
+				7E54F19B1A257CA40053BEB2 /* AppDelegate.m */,
+				7E54F19F1A257CA40053BEB2 /* ViewController.h */,
+				7E54F1A01A257CA40053BEB2 /* ViewController.m */,
+				7E54F1A51A257CA40053BEB2 /* Images.xcassets */,
+				7E54F1A71A257CA40053BEB2 /* Main.storyboard */,
+				7E54F1A21A257CA40053BEB2 /* Shika.xcdatamodeld */,
+				7E54F1D71A25A9930053BEB2 /* ShikaProject.h */,
+				7E54F1D81A25A9930053BEB2 /* ShikaProject.m */,
+				7ED6D65F1A3ECE8800748D89 /* TrainingSampleMaker.h */,
+				7ED6D6601A3ECE8800748D89 /* TrainingSampleMaker.mm */,
+				7ED0F20D1A4163BC005EAB9F /* ClassifierTrainer.h */,
+				7ED0F20E1A4163BC005EAB9F /* ClassifierTrainer.m */,
+				7ED6D6621A40053700748D89 /* HaarTraining */,
+				7E54F1981A257CA40053BEB2 /* Supporting Files */,
+			);
+			path = Shika;
+			sourceTree = "<group>";
+		};
+		7E54F1981A257CA40053BEB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E54F1991A257CA40053BEB2 /* Info.plist */,
+				7E54F19D1A257CA40053BEB2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E54F1B11A257CA40053BEB2 /* ShikaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E54F1B41A257CA40053BEB2 /* ShikaTests.m */,
+				7E54F1B21A257CA40053BEB2 /* Supporting Files */,
+			);
+			path = ShikaTests;
+			sourceTree = "<group>";
+		};
+		7E54F1B21A257CA40053BEB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E54F1B31A257CA40053BEB2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E54F1BE1A257FA30053BEB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ED6D67A1A400DE300748D89 /* libopencv_calib3d.2.4.5.dylib */,
+				7ED6D67B1A400DE300748D89 /* libopencv_contrib.2.4.5.dylib */,
+				7ED6D67C1A400DE300748D89 /* libopencv_core.2.4.5.dylib */,
+				7ED6D67D1A400DE300748D89 /* libopencv_features2d.2.4.5.dylib */,
+				7ED6D67E1A400DE300748D89 /* libopencv_flann.2.4.5.dylib */,
+				7ED6D67F1A400DE300748D89 /* libopencv_gpu.2.4.5.dylib */,
+				7ED6D6801A400DE300748D89 /* libopencv_highgui.2.4.5.dylib */,
+				7ED6D6811A400DE300748D89 /* libopencv_imgproc.2.4.5.dylib */,
+				7ED6D6821A400DE300748D89 /* libopencv_legacy.2.4.5.dylib */,
+				7ED6D6831A400DE300748D89 /* libopencv_ml.2.4.5.dylib */,
+				7ED6D6841A400DE300748D89 /* libopencv_nonfree.2.4.5.dylib */,
+				7ED6D6851A400DE300748D89 /* libopencv_objdetect.2.4.5.dylib */,
+				7ED6D6861A400DE300748D89 /* libopencv_ocl.2.4.5.dylib */,
+				7ED6D6871A400DE300748D89 /* libopencv_photo.2.4.5.dylib */,
+				7ED6D6881A400DE300748D89 /* libopencv_stitching.2.4.5.dylib */,
+				7ED6D6891A400DE300748D89 /* libopencv_superres.2.4.5.dylib */,
+				7ED6D68A1A400DE300748D89 /* libopencv_ts.2.4.5.dylib */,
+				7ED6D68B1A400DE300748D89 /* libopencv_video.2.4.5.dylib */,
+				7ED6D68C1A400DE300748D89 /* libopencv_videostab.2.4.5.dylib */,
+				7E54F1BF1A257FBA0053BEB2 /* Quartz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E54F1C11A2589830053BEB2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7E54F1C21A2589C50053BEB2 /* TB_annotate.tiff */,
+				7E54F1C31A2589C50053BEB2 /* TB_crop.tiff */,
+				7E54F1C41A2589C50053BEB2 /* TB_hand.tiff */,
+				7E54F1C51A2589C50053BEB2 /* TB_rotate.tiff */,
+				7E54F1C61A2589C50053BEB2 /* TB_select.tiff */,
+				7E54F1C71A2589C50053BEB2 /* TB_zoomActual.png */,
+				7E54F1C81A2589C50053BEB2 /* TB_zoomIn.png */,
+				7E54F1C91A2589C50053BEB2 /* TB_zoomOut.png */,
+				7E54F1CA1A2589C50053BEB2 /* TB_zoomToFit.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		7ED6D6621A40053700748D89 /* HaarTraining */ = {
+			isa = PBXGroup;
+			children = (
+				7ECE6CA81A68EEFB003B5F18 /* cvhaarclassifier.cpp */,
+				7ECE6CA61A68EEAD003B5F18 /* cvcommon.cpp */,
+				7ECE6CA41A68ED68003B5F18 /* cvboost.cpp */,
+				7ECE6CA31A68E046003B5F18 /* cvclassifier.h */,
+				7ECE6CA21A68DE6B003B5F18 /* _cvcommon.h */,
+				7ECE6CA11A68DE36003B5F18 /* _cvhaartraining.h */,
+				7ECE6C9F1A68DD98003B5F18 /* cvhaartraining.cpp */,
+				7ECE6C9E1A68D816003B5F18 /* cvhaartraining.h */,
+				7ED0F20C1A4151D2005EAB9F /* cvsamples.h */,
+				7ED0F20A1A4129DB005EAB9F /* cvsamples.cpp */,
+			);
+			name = HaarTraining;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E54F1941A257CA40053BEB2 /* Shika */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E54F1B81A257CA40053BEB2 /* Build configuration list for PBXNativeTarget "Shika" */;
+			buildPhases = (
+				7E54F1911A257CA40053BEB2 /* Sources */,
+				7E54F1921A257CA40053BEB2 /* Frameworks */,
+				7E54F1931A257CA40053BEB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shika;
+			productName = Shika;
+			productReference = 7E54F1951A257CA40053BEB2 /* Shika.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E54F1AD1A257CA40053BEB2 /* ShikaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E54F1BB1A257CA40053BEB2 /* Build configuration list for PBXNativeTarget "ShikaTests" */;
+			buildPhases = (
+				7E54F1AA1A257CA40053BEB2 /* Sources */,
+				7E54F1AB1A257CA40053BEB2 /* Frameworks */,
+				7E54F1AC1A257CA40053BEB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E54F1B01A257CA40053BEB2 /* PBXTargetDependency */,
+			);
+			name = ShikaTests;
+			productName = ShikaTests;
+			productReference = 7E54F1AE1A257CA40053BEB2 /* ShikaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E54F18D1A257CA40053BEB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Yubi;
+				TargetAttributes = {
+					7E54F1941A257CA40053BEB2 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					7E54F1AD1A257CA40053BEB2 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 7E54F1941A257CA40053BEB2;
+					};
+				};
+			};
+			buildConfigurationList = 7E54F1901A257CA40053BEB2 /* Build configuration list for PBXProject "Shika" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E54F18C1A257CA40053BEB2;
+			productRefGroup = 7E54F1961A257CA40053BEB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E54F1941A257CA40053BEB2 /* Shika */,
+				7E54F1AD1A257CA40053BEB2 /* ShikaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E54F1931A257CA40053BEB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E54F1D01A2589C50053BEB2 /* TB_zoomActual.png in Resources */,
+				7E54F1CC1A2589C50053BEB2 /* TB_crop.tiff in Resources */,
+				7E54F1A61A257CA40053BEB2 /* Images.xcassets in Resources */,
+				7E54F1CD1A2589C50053BEB2 /* TB_hand.tiff in Resources */,
+				7E54F1D31A2589C50053BEB2 /* TB_zoomToFit.png in Resources */,
+				7E54F1CE1A2589C50053BEB2 /* TB_rotate.tiff in Resources */,
+				7E54F1CB1A2589C50053BEB2 /* TB_annotate.tiff in Resources */,
+				7E54F1A91A257CA40053BEB2 /* Main.storyboard in Resources */,
+				7E54F1D21A2589C50053BEB2 /* TB_zoomOut.png in Resources */,
+				7E54F1D11A2589C50053BEB2 /* TB_zoomIn.png in Resources */,
+				7E54F1CF1A2589C50053BEB2 /* TB_select.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E54F1AC1A257CA40053BEB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E54F1911A257CA40053BEB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECE6CA01A68DD98003B5F18 /* cvhaartraining.cpp in Sources */,
+				7E54F1D61A2591C60053BEB2 /* PreprocessedSample.m in Sources */,
+				7ECE6CA91A68EEFB003B5F18 /* cvhaarclassifier.cpp in Sources */,
+				7E54F1A11A257CA40053BEB2 /* ViewController.m in Sources */,
+				7ECE6CA71A68EEAD003B5F18 /* cvcommon.cpp in Sources */,
+				7ED6D6611A3ECE8800748D89 /* TrainingSampleMaker.mm in Sources */,
+				7ED0F20F1A4163BC005EAB9F /* ClassifierTrainer.m in Sources */,
+				7E54F1D91A25A9930053BEB2 /* ShikaProject.m in Sources */,
+				7E54F19E1A257CA40053BEB2 /* main.m in Sources */,
+				7ECE6CA51A68ED68003B5F18 /* cvboost.cpp in Sources */,
+				7E54F1A41A257CA40053BEB2 /* Shika.xcdatamodeld in Sources */,
+				7E54F19C1A257CA40053BEB2 /* AppDelegate.m in Sources */,
+				7ED0F20B1A4129DB005EAB9F /* cvsamples.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E54F1AA1A257CA40053BEB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E54F1B51A257CA40053BEB2 /* ShikaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E54F1B01A257CA40053BEB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E54F1941A257CA40053BEB2 /* Shika */;
+			targetProxy = 7E54F1AF1A257CA40053BEB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E54F1A71A257CA40053BEB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E54F1A81A257CA40053BEB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E54F1B61A257CA40053BEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7E54F1B71A257CA40053BEB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7E54F1B91A257CA40053BEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				INFOPLIST_FILE = Shika/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7E54F1BA1A257CA40053BEB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				INFOPLIST_FILE = Shika/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7E54F1BC1A257CA40053BEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShikaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shika.app/Contents/MacOS/Shika";
+			};
+			name = Debug;
+		};
+		7E54F1BD1A257CA40053BEB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShikaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shika.app/Contents/MacOS/Shika";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E54F1901A257CA40053BEB2 /* Build configuration list for PBXProject "Shika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E54F1B61A257CA40053BEB2 /* Debug */,
+				7E54F1B71A257CA40053BEB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E54F1B81A257CA40053BEB2 /* Build configuration list for PBXNativeTarget "Shika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E54F1B91A257CA40053BEB2 /* Debug */,
+				7E54F1BA1A257CA40053BEB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E54F1BB1A257CA40053BEB2 /* Build configuration list for PBXNativeTarget "ShikaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E54F1BC1A257CA40053BEB2 /* Debug */,
+				7E54F1BD1A257CA40053BEB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E54F1A21A257CA40053BEB2 /* Shika.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E54F1A31A257CA40053BEB2 /* Shika.xcdatamodel */,
+			);
+			currentVersion = 7E54F1A31A257CA40053BEB2 /* Shika.xcdatamodel */;
+			path = Shika.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7E54F18D1A257CA40053BEB2 /* Project object */;
+}
